@@ -500,7 +500,8 @@ def normalMode():
             # 下单任务
             normalModeAutoBuy(inStockSkuid)
             # 休眠模块
-            timesleep = random.randint(1, 3) / 10
+            timesleep = random.randint(15, 30) / 10
+            logger.info("random delay: {} seconds".format(timesleep))
             time.sleep(timesleep)
             # 校验是否还在登录模块
             if flag % 100 == 0:
@@ -531,7 +532,8 @@ def fastMode():
             # 下单任务
             fastModeAutoBuy(inStockSkuid)
             # 休眠模块
-            timesleep = random.randint(1, 3) / 10
+            timesleep = random.randint(15, 30) / 10
+            logger.info("random delay: {} seconds".format(timesleep))
             time.sleep(timesleep)
             # 校验是否还在登录模块
             if flag % 100 == 0:

@@ -482,7 +482,8 @@ while (1):
         # 自动下单模块
         V3AutoBuy(inStockSkuid)
         # 休眠模块
-        timesleep = random.randint(1, 3) / 10
+        timesleep = random.randint(15, 30) / 10
+        logger.info("random delay: {} seconds".format(timesleep))
         time.sleep(timesleep)
         # 校验是否还在登录模块
         if flag % 100 == 0:
